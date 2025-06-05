@@ -9,6 +9,7 @@ A minimalist personal blog built with [React](https://react.dev/), [Vite](https:
 3. Start the dev server with `npm run dev` and open the URL shown in the terminal.
 4. Run tests with `npm test`.
 
+
 ## Build & Deploy
 
 To generate static files run:
