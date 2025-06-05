@@ -5,5 +5,10 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist'
+  },
+  test: {
+    environment: 'jsdom',
+    setupFiles: './vitest.setup.js'
+
   }
 })
