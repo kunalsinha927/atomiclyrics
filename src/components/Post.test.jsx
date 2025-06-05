@@ -1,11 +1,10 @@
-import { render, screen } from '@testing-library/react'
-import Post from './Post'
-import { describe, it, expect } from 'vitest'
+import { render, screen } from '@testing-library/react';
+import Post from './Post';
 
 describe('Post component', () => {
-  it('renders title and body', () => {
-    render(<Post title="Hello" body="World" />)
-    expect(screen.getByText('Hello')).toBeInTheDocument()
-    expect(screen.getByText('World')).toBeInTheDocument()
-  })
-})
+  it('renders a post with title and content', () => {
+    render(<Post title="Test Title" content="This is test content." />);
+    expect(screen.getByText('Test Title')).toBeInTheDocument();
+    expect(screen.getByText('This is test content.')).toBeInTheDocument();
+  });
+});
