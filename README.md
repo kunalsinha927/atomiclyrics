@@ -1,13 +1,19 @@
 # Atomic Lyrics
 
-This repository contains a minimalist blog powered by Jekyll and hosted with GitHub Pages.
+A minimalist personal blog built with [React](https://react.dev/), [Vite](https://vitejs.dev/), and [Tailwind CSS](https://tailwindcss.com/). Deploy the static build to GitHub Pages for quick hosting.
 
-## Usage
+## Local development
 
-1. Install Ruby and Bundler if you want to build locally.
-2. Run `bundle exec jekyll serve` to preview the site.
-3. Add new posts to the `_posts` directory using Markdown.
+1. Install Node.js (16+ recommended).
+2. Run `npm install` to install dependencies.
+3. Start the dev server with `npm run dev` and open the URL shown in the terminal.
 
-## Deploy
+## Build & Deploy
 
-Push the contents of this repository to a GitHub repository named `<username>.github.io` to publish your blog.
+To generate static files run:
+
+```bash
+npm run build
+```
+
+The output will be in the `dist` folder. Push the repository to GitHub and configure GitHub Pages to serve the contents of `dist`.
