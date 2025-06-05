@@ -1,0 +1,5 @@
+# Ignore build and dependency directories
+_site/
+.DS_Store
+node_modules/
+dist/
